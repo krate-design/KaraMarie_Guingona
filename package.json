@@ -2,13 +2,17 @@
   "name": "karamarie_guingona",
   "version": "1.0.0",
   "scripts": {
-    "start": "lite-server --baseDir=\"Overview\""
+    "goservergo": "lite-server --baseDir=\"Overview\"",
+    "karaisawesome": "sass --watch src/scss:Overview/assets/css",
+    "start": "concurrently \"npm run goservergo\" \"npm run karaisawesome\" "
   },
   "author": "Kara Marie Guingona",
   "license": "private",
   "private": true,
   "description": "",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "^9.1.0",
+    "lite-server": "^2.6.1",
+    "sass": "^1.81.0"
   }
 }
