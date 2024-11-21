@@ -1,7 +1,33 @@
-$fontsize: 50px;
+// Hello Word Demo
 
-body{
-    background-color: orange;
-    font-size: $fontsize;
+// $font-stack:Helvetica,san-serif;
+// $primary-color: pink;
+// $secondary-color: blue;
+
+// body{
+// font: 100% $font-stack;
+// color: $primary-color;
+// background-color: $secondary-color;
+// }
+
+
+.row {
+    margin-top: 1rem;
+}
+
+
+.col {
+
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: rgba(249, 44, 205, 0.15);
+    border: 1px solid rgba(112.520718,44.062154,249.437846, 0.3);
+
+}
+
+.btn-primary {
+    background-color: yellow;
+
+
 
 }
