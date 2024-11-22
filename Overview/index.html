@@ -5,37 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overview</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="/assets/css/stylesheet.css">
+
+
 
 </head>
 <body>
-    <!-- <h1>Hello World!</h1>
-    <p>Some more content</p> -->
 
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-            Column
-            </div>
-            <div class="col">
-            Column
-            </div>
-            <div class="col">
-            Column
-            </div>
+    <div class="container-fluid">
+
+        <div class="row flex-nowrap">
+
+            <nav class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+               
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+
+                    <a href="/" class="d-flex align-items-center pt-2 pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <div class="DashKit-Logo">
+                            <img src="/assets/images/d-logo.svg" alt="">
+                            <h4>Dashboard Kit</h4>
+                        </div>
+                    </a>
+
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start pt-5" id="menu">
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                        </li>
+
+                    </ul>
+                    
+                </div>
+            </nav>
+
+
+            <main class="col py-3 main-container">
+                
+                <header class="p-3 mb-3 border-bottom">
+
+                    <div class="container-fluid">
+
+                        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                    
+                            <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 pt-3 pb-3 Page-Title">
+                                <h3>Overview</h3>
+                            </div>
+                    
+                            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                            </form>
+                    
+                            <div class="dropdown text-end">
+                                <a href="#" id="dropdownUser1">
+                                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                                </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="container-fluid px-4 Tasks">
+                    <!-- Smaller Mobile First (Stacked) -->
+                    <div class="row d-block d-md-none">
+                        <div class="col">
+                            <div class="p-3 border bg-light">
+                                <p>Unresolved</p>
+                                <h2>60</h2>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light">Content 2</div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light">Content 3</div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light">Content 4</div>
+                        </div>
+                    </div>
+                
+                    <!-- Default Layout (Mobile-first and Responsive) -->
+                    <div class="row d-none d-md-flex">
+                        <!-- Column 1 -->
+                        <div class="col-6 col-lg-3">
+                            <div class="p-3 border bg-light">
+                                <p>Unresolved</p>
+                                <h2>60</h2>
+                            </div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="col-6 col-lg-3">
+                            <div class="p-3 border bg-light">Content 2</div>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="col-6 col-lg-3">
+                            <div class="p-3 border bg-light">Content 3</div>
+                        </div>
+                        <!-- Column 4 -->
+                        <div class="col-6 col-lg-3">
+                            <div class="p-3 border bg-light">Content 4</div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+            
         </div>
+
     </div>
+    
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>

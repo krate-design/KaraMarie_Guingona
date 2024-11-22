@@ -1,33 +1,67 @@
-// Hello Word Demo
-
-// $font-stack:Helvetica,san-serif;
-// $primary-color: pink;
-// $secondary-color: blue;
-
-// body{
-// font: 100% $font-stack;
-// color: $primary-color;
-// background-color: $secondary-color;
-// }
-
-
-.row {
-    margin-top: 1rem;
+.DashKit-Logo{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left:10px;
+    gap: 10px;
+    // background-color: aqua;
 }
 
 
-.col {
+i{
+    padding: 10px;
+}
 
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    background-color: rgba(249, 44, 205, 0.15);
-    border: 1px solid rgba(112.520718,44.062154,249.437846, 0.3);
+
+.Avatar-Img{
+    display: flex;
+    flex-direction: row;
+}
+
+.DashKit-Logo h4{
+    display: none;
+}
+
+.main-container {
+    background-color: #F7F8FC;
+}
+
+.nav-link {
+
+    color: #A4A6B3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+
+.Page-Title h3{
+    font-size: 1.8rem ;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
 
 }
 
-.btn-primary {
-    background-color: yellow;
+.Tasks{
+    text-align: center;
+}
 
+.Tasks h2{
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+}
 
+@media (min-width:576px){
+
+    .DashKit-Logo h4{
+        display: block;
+    }
+    
 
 }
