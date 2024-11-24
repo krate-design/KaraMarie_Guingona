@@ -1,10 +1,39 @@
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background: var(--sidebar-bg, #363740) !important;
+}
+
 .DashKit-Logo {
   display: flex;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 25px;
+  padding-right: 15px;
   gap: 10px;
+}
+
+.DashKit-Logo h4 {
+  color: var(--sidebar-gray, #A4A6B3);
+  /* Bold 19 (0.4 px) */
+  font-family: Mulish;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  opacity: 0.7;
+}
+
+.Nav-Bar ul li {
+  color: var(--sidebar-gray, #A4A6B3);
+  /* Reg 16 (0.2 px) */
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 0.2px;
 }
 
 i {
@@ -24,8 +53,13 @@ i {
   background-color: #F7F8FC;
 }
 
+.nav {
+  display: block;
+}
+
 .nav-link {
-  color: #A4A6B3;
+  color: var(--accent-light, #DDE2FF);
+  /* Reg 16 (0.2 px) */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -33,11 +67,90 @@ i {
   letter-spacing: 0.2px;
 }
 
-.Page-Title h3 {
-  font-size: 1.8rem;
+.nav-item {
+  padding: 10px 15px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent-light, #DDE2FF);
+}
+
+.nav-item span {
+  color: var(--sidebar-gray, #A4A6B3);
+}
+
+.nav-item:hover {
+  background-color: #404149;
+}
+
+.line {
+  display: none;
+}
+
+/* Add hover effect for nav-item */
+/* Change color of span and svg inside nav-item on hover */
+.nav-item:hover .nav-link span,
+.nav-item:hover .nav-link svg {
+  color: rgb(255, 255, 255); /* White color for span and svg */
+}
+
+.nav-item:hover .nav-link svg {
+  fill: white; /* Set SVG fill to white */
+}
+
+.User-Photo {
+  order: 4; /* Stay as the last position */
+}
+
+.User-Name {
+  order: 3; /* Stay as the second-to-last position */
+}
+
+.Notification-Icon {
+  order: 1; /* Stay as the first position */
+}
+
+.Line-Diviuder {
+  order: 2; /* Stay as the second position */
+}
+
+.Search-Form {
+  order: 0; /* Default order for smaller screens */
+}
+
+.Heaader-Section {
+  justify-content: center;
+}
+
+.User-Name h4 {
+  color: var(--grayscale-black, #252733);
+  text-align: right;
+  /* Semibold 14 (0.2 px) */
+  font-family: Mulish;
+  font-size: 14px !important;
   font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.Page-Title h3 {
+  color: var(--grayscale-black, #252733);
+  /* Bold 24 (0.3 px) */
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
+}
+
+.task-bullets {
+  margin-bottom: 16px; /* Adjust spacing as needed */
+}
+
+.task-bullets:last-child {
+  margin-bottom: 0; /* Remove spacing below the last item */
 }
 
 .Tasks {
@@ -45,15 +158,481 @@ i {
 }
 
 .Tasks h2 {
+  color: var(--grayscale-black, #252733);
+  text-align: center;
+  /* Bold 40 (1 px) */
+  font-family: Mulish;
   font-size: 40px;
   font-style: normal;
+  font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
 }
 
+.Tasks p {
+  color: var(--grayscale-gray, #9FA2B4);
+  text-align: center;
+  /* Bold 19 (0.4 px) */
+  font-family: Mulish;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.Todays-trends {
+  height: auto;
+}
+
+.Todays-trends-content {
+  border-radius: 8px;
+  border: 1px solid var(--grayscale-divider, #DFE0EB);
+  background: var(--grayscale-white, #FFF);
+}
+
+.Graph {
+  height: auto;
+}
+
+.Graph-Labels h5 {
+  color: var(--grayscale-black, #252733);
+  /* Bold 19 (0.4 px) */
+  font-family: Mulish;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.Graph-Labels p {
+  color: var(--grayscale-gray, #9FA2B4);
+  /* Reg 12 (0.1 px) */
+  font-family: Mulish;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.1px;
+  padding-top: 8px;
+}
+
+.Graph-Labels span {
+  color: var(--grayscale-gray, #9FA2B4);
+  /* Semibold 12 (0.1 px) */
+  font-family: Mulish;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.Trends-Right p {
+  color: var(--grayscale-gray, #9FA2B4);
+  text-align: center;
+  /* Semibold 16 (0.3 px) */
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.3px;
+}
+
+.Trends-Right h4 {
+  color: var(--grayscale-black, #252733);
+  text-align: center;
+  /* Bold 24 (0.3 px) */
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
+
+.themed-grid-col {
+  padding: 0px;
+}
+
+.Graph-01 img {
+  object-fit: contain;
+  padding: 0px;
+}
+
+.Task-Box {
+  background-color: #FFF !important;
+  border-radius: 8px;
+  border: 1px solid var(--accent-default, #3751FF);
+  background: var(--grayscale-white, #FFF);
+}
+
+.Task-Box:hover {
+  border-radius: 8px !important;
+  border: 1px solid var(--accent-default, #3751FF) !important;
+  background: var(--grayscale-white, #FFF) !important;
+}
+
+.Task-List-Box {
+  border-radius: 8px;
+  border: 1px solid var(--grayscale-divider, #DFE0EB);
+  background: var(--grayscale-white, #FFF);
+}
+
+.Task-List-Header h5 {
+  color: var(--grayscale-black, #252733);
+  /* Bold 19 (0.4 px) */
+  font-family: Mulish;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.Task-List-Header p {
+  color: var(--grayscale-gray, #9FA2B4);
+  /* Reg 12 (0.1 px) */
+  font-family: Mulish;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.1px;
+  padding-top: 8px;
+}
+
+.label {
+  color: var(--accent-default, #3751FF);
+  text-align: right;
+  /* Semibold 14 (0.2 px) */
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.Task-List label {
+  color: var(--grayscale-black, #252733);
+  /* Semibold 14 (0.2 px) */
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.Task-List span {
+  color: var(--grayscale-gray, #9FA2B4);
+  text-align: right;
+  /* Semibold 14 (0.2 px) */
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.Tickets-Tasks-Container {
+  padding-top: 25px;
+}
+
+.Unresolved-tickets {
+  background-color: #FFFFFF !important;
+}
+
+.list-group-item {
+  padding: 20px 0px;
+}
+
+.Task-List {
+  padding-bottom: 40px;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0; /* Keeps the navigation bar at the top */
+  z-index: 1000; /* Ensures it stays above other elements */
+  height: 100vh; /* Makes the nav full-height */
+  overflow-y: auto; /* Adds a scroll if the nav content overflows */
+}
+
+.edge-badge {
+  top: 50%; /* Vertically centers the badge */
+  right: 16px; /* Adjusts the badge to the edge of the container */
+  transform: translateY(-50%); /* Ensures perfect vertical centering */
+  position: absolute; /* Positions the badge relative to the container */
+}
+
+.Create-New-Task {
+  padding: 15px 0px;
+}
+
+.Create-New-Task p {
+  color: var(--grayscale-gray-light, #C5C7CD);
+  /* Semibold 14 (0.2 px) */
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.Tickets-Tasks-Container {
+  display: flex;
+  flex-direction: column; /* Stack by default */
+  gap: 10px; /* Smaller gap for mobile */
+}
+
+#firstCheckboxStretched:hover {
+  background-color: #3751FF;
+}
+
+#secondCheckboxStretched:hover {
+  background-color: #3751FF;
+}
+
+#thirdCheckboxStretched:hover {
+  background-color: #3751FF;
+}
+
+.hover-outline {
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for the outline */
+}
+
+/* Hover effect */
+.hover-outline:hover {
+  box-shadow: 0 0 0 2px blue; /* Blue outline */
+  border-radius: 8px; /* Match the SVG's rounded corners */
+  transform: scale(1.1); /* Optional: slightly enlarge for emphasis */
+}
+
 @media (min-width: 576px) {
+  .User-Photo {
+    order: 1;
+  }
+  .User-Name {
+    order: 2;
+  }
+  .Notification-Icon {
+    order: 3;
+  }
+  .Line-Diviuder {
+    order: 4;
+  }
   .DashKit-Logo h4 {
     display: block;
+    width: 120px;
+  }
+  .themed-grid-col {
+    text-align: left; /* Default for larger screens */
+  }
+  .trend-stats {
+    justify-content: space-around;
+    border-left: 1px solid #DFE0EB;
+  }
+  .trend-stats .text-center {
+    stroke-width: 1px;
+    stroke: var(--grayscale-divider, #DFE0EB);
+    padding: 25px 0px;
+  }
+  .Graph-01 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+  }
+  .line {
+    display: block;
+  }
+  .task-bullets {
+    margin-bottom: 0; /* Remove vertical spacing for side-by-side layout */
+    margin-right: 30px; /* Add horizontal spacing between items */
+  }
+  .task-bullets:last-child {
+    margin-right: 0; /* Remove margin on the last item */
+  }
+}
+@media (max-width: 575px) {
+  .User-Photo {
+    order: 1;
+  }
+  .User-Name {
+    order: 2;
+  }
+  .Notification-Icon {
+    order: 3;
+  }
+  .Line-Diviuder {
+    order: 4;
+  }
+  .Trends-Right-Bullet {
+    padding: 15px 0px;
+    border-top: 1px solid #DFE0EB;
+  }
+}
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+  .User-Photo {
+    order: 1;
+  }
+  .User-Name {
+    order: 2;
+  }
+  .Notification-Icon {
+    order: 3;
+  }
+  .Line-Diviuder {
+    order: 4;
+  }
+  .Graph-01 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0px;
+  }
+  .trend-stats .text-center {
+    border-bottom: 1px solid #DFE0EB;
+    padding: 10px 0px;
+  }
+  .DashKit-Logo h4 {
+    display: block;
+    width: auto;
+  }
+  .line {
+    display: block;
+  }
+  .Tickets-Tasks-Container {
+    flex-direction: row; /* Side-by-side for larger screens */
+    gap: 15px; /* Adds 30px gap between columns */
+  }
+  .task-bullets {
+    margin-bottom: 0; /* Remove vertical spacing for side-by-side layout */
+    margin-right: 30px; /* Add horizontal spacing between items */
+  }
+  .task-bullets:last-child {
+    margin-right: 0; /* Remove margin on the last item */
+  }
+}
+@media (max-width: 767px) {
+  .trend-stats .text-center {
+    border-bottom: 1px solid #DFE0EB;
+  }
+}
+/* For screens larger than 992px */
+@media (min-width: 992px) {
+  .User-Photo {
+    order: 4; /* Stay as the last position */
+  }
+  .User-Name {
+    order: 3; /* Stay as the second-to-last position */
+  }
+  .Notification-Icon {
+    order: 1; /* Stay as the first position */
+  }
+  .Line-Diviuder {
+    order: 2; /* Stay as the second position */
+  }
+  .Graph-01 img {
+    object-fit: contain;
+    max-height: auto;
+    padding: 30px;
+  }
+  .trend-stats .text-center {
+    border-bottom: 1px solid #DFE0EB;
+    padding: 15px 0px;
+  }
+  .DashKit-Logo h4 {
+    display: block;
+    width: auto;
+  }
+  .line {
+    display: block;
+  }
+  .Tickets-Tasks-Container {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .task-bullets {
+    margin-bottom: 0;
+    margin-right: 30px; /* Add horizontal spacing between items */
+  }
+  .task-bullets:last-child {
+    margin-right: 0; /* Remove margin on the last item */
+  }
+}
+@media (max-width: 991px) {
+  .Search-Form {
+    order: 5; /* Place Search-Form as the last element */
+  }
+  .Search-Form {
+    padding: 30px;
+  }
+  .Notification-Icon, .Line-Diviuder {
+    display: none;
+  }
+  .Header-Section {
+    padding-bottom: 0px;
+  }
+  header {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .User-Photo {
+    order: 1;
+  }
+  .User-Name {
+    order: 2;
+  }
+  .Notification-Icon {
+    order: 3;
+  }
+  .Line-Diviuder {
+    order: 4;
+  }
+  .User-Photo {
+    order: 4; /* Stay as the last position */
+  }
+  .User-Name {
+    order: 3; /* Stay as the second-to-last position */
+  }
+  .Notification-Icon {
+    order: 1; /* Stay as the first position */
+  }
+  .Line-Diviuder {
+    order: 2; /* Stay as the second position */
+  }
+  .Graph-01 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 40px;
+  }
+  .trend-stats .text-center {
+    border-bottom: 1px solid #DFE0EB;
+    padding: 32px 0px;
+  }
+  .line {
+    display: block;
+  }
+  .Tickets-Tasks-Container {
+    flex-direction: row; /* Side-by-side for larger screens */
+    gap: 30px; /* Adds 30px gap between columns */
+  }
+  .task-bullets {
+    margin-bottom: 0; /* Remove vertical spacing for side-by-side layout */
+    margin-right: 30px; /* Add horizontal spacing between items */
+  }
+  .task-bullets:last-child {
+    margin-right: 0; /* Remove margin on the last item */
   }
 }
 
