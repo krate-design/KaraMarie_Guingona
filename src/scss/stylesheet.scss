@@ -102,9 +102,9 @@ background-color: #404149;
 }
 
 
-// nav .nav-link svg {
-//     pointer-events: none !important;
-// }
+.nav-item .divider {
+    pointer-events: none !important;
+}
 
 .line{
     display: none;
@@ -364,8 +364,21 @@ justify-content: center;
     border-radius: 8px;
     border: 1px solid var(--grayscale-divider, #DFE0EB);
     background: var(--grayscale-white, #FFF);
+    height: 100%;
     
+}
 
+.Task-List-Box .list-group{
+    height: auto;
+
+}
+
+.Pending{
+    border-bottom: 0px;
+}
+
+.Third{
+    border-bottom: 0px;
 }
 
 .Task-List-Header h5{
@@ -441,6 +454,7 @@ justify-content: center;
 
 .Tickets-Tasks-Container {
 padding-top: 25px;
+
 }
 
 .Unresolved-tickets {
@@ -530,6 +544,10 @@ padding-top: 25px;
 
 
 
+
+
+// MEDIA QUIERIES
+
 @media (min-width:576px){
 
     .User-Photo {
@@ -593,15 +611,7 @@ padding-top: 25px;
         margin-right: 0; /* Remove margin on the last item */
     }
 
-
-    // .Trends-Right-Bullet{
-
-    //     border-top: 1px solid #DFE0EB;
-    // }
-
-
 }
-
 
 @media(max-width:575px){
     .User-Photo {
@@ -626,9 +636,9 @@ padding-top: 25px;
         border-top: 1px solid #DFE0EB;
     }
 
-
-
 }
+
+
 
 /* For screens larger than 768px */
 @media (min-width: 768px) {
@@ -693,7 +703,8 @@ padding-top: 25px;
         border-bottom: 1px solid #DFE0EB;
     }
 }
-  
+
+
 /* For screens larger than 992px */
 @media (min-width: 992px) {
 
@@ -754,8 +765,6 @@ padding-top: 25px;
 
 
 
-
-
 @media (max-width: 991px) {
 
     .Search-Form {
@@ -782,6 +791,7 @@ padding-top: 25px;
 
 
 @media (min-width:1200px){
+
 
     .User-Photo {
         order: 1;
@@ -818,10 +828,7 @@ padding-top: 25px;
     }
 
     .Graph-01 img {
-        width: 100%;
-        height: auto;
-        object-fit:cover;
-        padding: 40px;
+        object-fit:contain;
     }
   
     .trend-stats .text-center{

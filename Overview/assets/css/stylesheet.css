@@ -83,6 +83,10 @@ i {
   background-color: #404149;
 }
 
+.nav-item .divider {
+  pointer-events: none !important;
+}
+
 .line {
   display: none;
 }
@@ -279,6 +283,19 @@ i {
   border-radius: 8px;
   border: 1px solid var(--grayscale-divider, #DFE0EB);
   background: var(--grayscale-white, #FFF);
+  height: 100%;
+}
+
+.Task-List-Box .list-group {
+  height: auto;
+}
+
+.Pending {
+  border-bottom: 0px;
+}
+
+.Third {
+  border-bottom: 0px;
 }
 
 .Task-List-Header h5 {
@@ -611,10 +628,7 @@ i {
     order: 2; /* Stay as the second position */
   }
   .Graph-01 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    padding: 40px;
+    object-fit: contain;
   }
   .trend-stats .text-center {
     border-bottom: 1px solid #DFE0EB;
